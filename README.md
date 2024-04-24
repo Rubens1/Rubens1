@@ -1,16 +1,13 @@
-### Hi there 👋
+# Rubens Nogueira
 
-<!--
-**Rubens1/Rubens1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h2>Top skills</h1>
+<div align="center">
+    <img src="https://skillicons.dev/icons?i=php,javascript,typescript,cs,mysql,sqlite" /><br>
+    <img src="https://skillicons.dev/icons?i=laravel,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
+</div>
+<br />
+<div  align="center" style="margin-bottom:100px">
+<img width=55% align="center"  src="https://github-readme-streak-stats.herokuapp.com?user=Rubens1&theme=radical&mode=weekly" />
+<img width=40% align="center" src="https://github-readme-stats-git-main-rafaelalexandrino.vercel.app/api/top-langs/?username=Rubens1&show_icons=true&theme=radical&layout=compact" />
+ </div>
+ 
