@@ -2,8 +2,8 @@
 
 <h2>Top skills</h1>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=php,javascript,typescript,cs,mysql,sqlite" /><br>
-    <img src="https://skillicons.dev/icons?i=laravel,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
+    <img src="https://skillicons.dev/icons?i=php,python,javascript,typescript,cs,mysql,sqlite" /><br>
+    <img src="https://skillicons.dev/icons?i=laravel,django,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
 </div>
 <br />
 <div  align="center" style="margin-bottom:100px">
