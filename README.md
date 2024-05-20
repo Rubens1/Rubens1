@@ -6,9 +6,3 @@
     <img src="https://skillicons.dev/icons?i=php,python,javascript,typescript,cs,mysql,sqlite" /><br>
     <img src="https://skillicons.dev/icons?i=laravel,django,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
 </div>
-<br />
-<div  align="center" style="margin-bottom:100px">
-<img width=55% align="center"  src="https://github-readme-streak-stats.herokuapp.com?user=Rubens1&theme=tokyonight&mode=weekly" />
-<img width=40% align="center" src="https://github-readme-stats-git-main-rafaelalexandrino.vercel.app/api/top-langs/?username=Rubens1&hide=CSS,SCSS,LESS,HTML,Handlebars,Blade&show_icons=true&theme=tokyonight&layout=compact" />
- </div>
- 
