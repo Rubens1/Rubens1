@@ -3,6 +3,6 @@
 </h1>
 <h2>Top skills</h1>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=php,python,javascript,typescript,cs,mysql,sqlite" /><br>
+    <img src="https://skillicons.dev/icons?i=php,python,javascript,typescript,cs,mysql,sqlite,postgresql" /><br>
     <img src="https://skillicons.dev/icons?i=laravel,django,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
 </div>
