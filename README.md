@@ -7,7 +7,7 @@
     <img src="https://skillicons.dev/icons?i=laravel,django,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
 </div>
 <br />
-<div align="center">
+<div align="center" style="margin-bottom:100px">
       <img src="https://github-readme-stats.vercel.app/api?username=Rubens1&show_icons=true&theme=dark" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rubens1&hide_progress=true&hide=css,less,scss,html&theme=dark" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rubens1&hide_progress=true&hide=css,less,scss,html&theme=dark&card_width=320" />
 </div>
