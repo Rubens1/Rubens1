@@ -7,6 +7,7 @@
     <img src="https://skillicons.dev/icons?i=laravel,django,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
 </div>
 <br />
-<div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics" />
+<div align="center" style="margin-bottom: 100px">
+    <img  src="./profile/stats.svg" height="180" alt="Estatísticas do GitHub" />
+    <img  src="./profile/top-langs.svg"  height="180"  alt="Linguagens mais utilizadas" />
 </div>
