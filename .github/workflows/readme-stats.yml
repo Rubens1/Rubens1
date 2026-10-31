@@ -1,32 +1,27 @@
-name: Update README Stats
+name: Generate Readme Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *" # Atualiza diariamente à meia-noite
+  workflow_dispatch: # Permite executar manualmente a qualquer momento
 
 jobs:
-  publish:
+  generate-stats:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate Readme Stats SVG
-        uses: anuraghazra/github-readme-stats@master
+      - name: Generate Stats SVG
+        uses: anuraghazra/github-readme-stats-actions@v1.0.0
         with:
-          TOKEN: ${{ secrets.GH_PAT }}
-          # Definir o tema dos cards (ex: dark, dracula, tokyonight, synthwave)
-          THEME: "dark"
-          # Ocultar linguagens específicas (separadas por vírgula, em minúsculas)
-          HIDE: "css,html,less,scss"
-          # Ocultar barras de progresso de linguagens (opcional: true/false)
-          HIDE_PROGRESS: "true"
-          # Incluir todos os commits do histórico
-          INCLUDE_ALL_COMMIT: "true"
+          token: ${{ secrets.GH_PAT }}
+          output-folder: "generated-stats"
+          show_icons: "true"
+          theme: "dark"
+          hide_langs: "css,html,less,scss"
 
-      - name: Commit and Push SVGs to Repository
+      - name: Commit and Push SVGs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update readme stats SVGs with custom theme"
-          file_pattern: "*.svg"
+          commit_message: "chore: update readme stats SVGs"
