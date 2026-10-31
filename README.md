@@ -7,8 +7,6 @@
     <img src="https://skillicons.dev/icons?i=laravel,django,react,nextjs,nodejs,express,dotnet,bootstrap,tailwind,html,css,vscode,github,git,docker" />
 </div>
 <br />
-<div align="center" style="margin-bottom:100px">
-      <!-- Se usaste output-folder: "generated-stats" -->
-      <img src="./generated-stats/github-readme-stats.svg" />
-      <img src="./generated-stats/top-langs.svg" />
+<div align="center">
+  <img src="./github-metrics.svg" alt="GitHub Metrics" />
 </div>
