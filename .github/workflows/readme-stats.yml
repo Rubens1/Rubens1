@@ -2,21 +2,24 @@ name: Update README Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Executa todo dia à meia-noite (UTC)
-  workflow_dispatch: # Permite executar manualmente pelo painel do GitHub
+    - cron: "0 0 * * *" # Executa diariamente à meia-noite
+  workflow_dispatch: # Permite rodar manualmente
 
 jobs:
-  update-readme:
+  publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate GitHub Readme Stats
+      - name: Generate Readme Stats SVG
         uses: anuraghazra/github-readme-stats@master
         with:
           TOKEN: ${{ secrets.GH_PAT }}
-          # Aqui você pode ativar quais cards quer gerar automaticamente
           INCLUDE_ALL_COMMIT: "true"
+
+      - name: Commit and Push SVGs to Repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update readme stats SVGs"
+          file_pattern: "*.svg"
