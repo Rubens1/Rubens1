@@ -6,22 +6,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-stats:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Generate Stats SVG
-        uses: anuraghazra/github-readme-stats-actions@v1.0.0
+        uses: anuraghazra/github-readme-stats@master
         with:
-          token: ${{ secrets.GH_PAT }}
-          output-folder: "generated-stats"
+          TOKEN: ${{ secrets.GH_PAT }}
           show_icons: "true"
           theme: "dark"
-          hide_langs: "css,html,less,scss"
+          hide: "css,html,less,scss"
+          include_all_commits: "true"
 
       - name: Commit and Push SVGs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update readme stats SVGs"
+          file_pattern: "*.svg"
