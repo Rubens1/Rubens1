@@ -1,4 +1,4 @@
-name: Generate Readme Stats
+name: Metrics
 
 on:
   schedule:
@@ -6,23 +6,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Generate Stats SVG
-        uses: anuraghazra/github-readme-stats@master
+      - uses: lowlighter/metrics@latest
         with:
-          TOKEN: ${{ secrets.GH_PAT }}
-          show_icons: "true"
-          theme: "dark"
-          hide: "css,html,less,scss"
-          include_all_commits: "true"
-
-      - name: Commit and Push SVGs
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update readme stats SVGs"
-          file_pattern: "*.svg"
+          token: ${{ secrets.GH_PAT }}
+          filename: github-metrics.svg
+          base: header, activity, community, metadata
+          plugin_languages: yes
+          plugin_languages_ignored: css, html, less, scss
