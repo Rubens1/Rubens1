@@ -8,6 +8,6 @@
 </div>
 <br />
 <div align="center" style="margin-bottom:100px">
-      <img src="https://github-readme-stats.vercel.app/api?username=Rubens1&show_icons=true&theme=dark" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rubens1&hide_progress=true&hide=css,less,scss,html&theme=dark&card_width=320" />
+      <img src="./stats.svg" />
+      <img src="./top-langs.svg" />
 </div>
