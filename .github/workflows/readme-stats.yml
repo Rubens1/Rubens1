@@ -1,0 +1,22 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Executa todo dia à meia-noite (UTC)
+  workflow_dispatch: # Permite executar manualmente pelo painel do GitHub
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Readme Stats
+        uses: anuraghazra/github-readme-stats@master
+        with:
+          TOKEN: ${{ secrets.GH_PAT }}
+          # Aqui você pode ativar quais cards quer gerar automaticamente
+          INCLUDE_ALL_COMMIT: "true"
